@@ -1,0 +1,61 @@
+import java.util.Scanner;
+import java.util.Set;
+
+public class Matrix{
+    Scanner input=new Scanner(System.in);
+    int rows;
+
+    int columns;
+    double data[][];
+
+    public Matrix(){
+        rows=input.nextInt();
+        columns=input.nextInt();
+        data=new double [rows][columns];
+    }
+
+
+    public void SetElement(){
+        for(int i=0;i<rows;i++){
+            for(int j=0;j<columns;j++){
+                System.out.print("enter("+i+","+j+")th element:-");
+                data[i][j]=input.nextInt();
+            }
+        }
+    }
+    public void GetElement(){
+        for(int i=0;i<rows;i++){
+            System.out.println();
+            for(int j=0;j<columns;j++){
+                System.out.print(data[i][j]+" ");
+            }
+        }
+
+    }
+    public void Sum(double arr[][]){
+        int i1= arr.length;
+        int j1=arr[0].length;
+        if(rows==i1 & columns==j1){
+            System.out.println("addition is possible");
+            for(int i=0;i<i1;i++){
+                for(int j =0;;){
+            }
+
+        }
+
+    }
+
+
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Matrix m1= new Matrix();
+        Matrix m2= new Matrix();
+        m1.SetElement();
+        m2.SetElement();
+        m1.Sum(m2.data);
+        System.out.println(m1.data);
+        m1.GetElement();
+
+    }}
